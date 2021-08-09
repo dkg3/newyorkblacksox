@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: 'New York Blacksox',
     path: '/',
   },
   {
@@ -9,11 +9,11 @@ const routes = [
     path: '/about',
   },
   {
-    label: 'Resume',
+    label: 'Schedule',
     path: '/resume',
   },
   {
-    label: 'Projects',
+    label: 'Roster',
     path: '/projects',
   },
   {
