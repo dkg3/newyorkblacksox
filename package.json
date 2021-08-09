@@ -1,11 +1,11 @@
 {
-  "name": "blacksox-team-site",
+  "name": "newyorkblacksox",
   "version": "3.0.1",
-  "homepage": "https://dkg3.github.io/blacksox-team-site/",
+  "homepage": "https://dkg3.github.io/newyorkblacksox/",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dkg3/blacksox-team-site.git"
+    "url": "https://github.com/dkg3/newyorkblacksox.git"
   },
   "scripts": {
     "build": "rimraf ./build && react-scripts build",
