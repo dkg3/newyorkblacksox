@@ -16,8 +16,7 @@ const News = lazy(() => import('./pages/News'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const Photos = lazy(() => import('./pages/Photos'));
 const Roster = lazy(() => import('./pages/Roster'));
-const Schedule = lazy(() => import('./pages/Schedule'));
-const Scores = lazy(() => import('./pages/Scores'));
+const ScoresSchedule = lazy(() => import('./pages/ScoresSchedule'));
 const Stats = lazy(() => import('./pages/Stats'));
 const Videos = lazy(() => import('./pages/Videos'));
 
@@ -28,8 +27,7 @@ const App = () => (
         <Route exact path="/" component={Index} />
         <Route path="/about" component={About} />
         <Route path="/news" component={News} />
-        <Route path="/scores" component={Scores} />
-        <Route path="/schedule" component={Schedule} />
+        <Route path="/scores-schedule" component={ScoresSchedule} />
         <Route path="/stats" component={Stats} />
         <Route path="/roster" component={Roster} />
         <Route path="/photos" component={Photos} />

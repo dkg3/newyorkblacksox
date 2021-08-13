@@ -17,7 +17,7 @@ const SideBar = () => (
     </section>
 
     <section className="blurb">
-      <p>This is the official homepage for the New York Blacksox; a New York City adult
+      <p>This is the official website of the New York Blacksox; a New York City adult
         league baseball club that plays throughout the Spring and Summer.
       </p>
       <ul className="actions">

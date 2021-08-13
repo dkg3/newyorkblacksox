@@ -13,12 +13,8 @@ const routes = [
     path: '/news',
   },
   {
-    label: 'Scores',
-    path: '/scores',
-  },
-  {
-    label: 'Schedule',
-    path: '/schedule',
+    label: 'Scores/Schedule',
+    path: '/scores-schedule',
   },
   {
     label: 'Stats',

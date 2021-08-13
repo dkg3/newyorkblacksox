@@ -1,26 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import raw from 'raw.macro';
 
 import Main from '../layouts/Main';
 
-import Personal from '../components/Stats/Personal';
-import Site from '../components/Stats/Site';
+// uses babel to load contents of file
+const markdown = raw('../data/news.md');
 
-const Stats = () => (
+// Make all hrefs react router links
+const LinkRenderer = ({ ...children }) => <Link {...children} />;
+
+const News = () => (
   <Main
-    title="Stats"
-    description="Stats Page for the New York Blacksox"
+    title="News"
+    description="The Latest News and Updates for the New York Blacksox"
   >
-    <article className="post" id="stats">
+    <article className="post markdown" id="news">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/stats">Stats</Link></h2>
+          <h2 data-testid="heading"><Link to="/news">Blacksox News</Link></h2>
         </div>
       </header>
-      <Personal />
-      <Site />
+      <ReactMarkdown
+        source={markdown}
+        renderers={{
+          Link: LinkRenderer,
+        }}
+        escapeHtml={false}
+      />
     </article>
   </Main>
 );
 
-export default Stats;
+export default News;
