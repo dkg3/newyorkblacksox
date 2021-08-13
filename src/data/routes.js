@@ -9,16 +9,36 @@ const routes = [
     path: '/about',
   },
   {
-    label: 'Schedule',
-    path: '/resume',
+    label: 'News',
+    path: '/news',
   },
   {
-    label: 'Roster',
-    path: '/projects',
+    label: 'Scores',
+    path: '/scores',
+  },
+  {
+    label: 'Schedule',
+    path: '/schedule',
   },
   {
     label: 'Stats',
     path: '/stats',
+  },
+  {
+    label: 'Roster',
+    path: '/roster',
+  },
+  {
+    label: 'Photos',
+    path: '/photos',
+  },
+  {
+    label: 'Videos',
+    path: '/videos',
+  },
+  {
+    label: 'Archives',
+    path: '/archives',
   },
   {
     label: 'Contact',

@@ -9,12 +9,17 @@ const { PUBLIC_URL } = process.env;
 // NOTE that some of these chunks are very small. We should optimize
 // which pages are lazy loaded in the future.
 const About = lazy(() => import('./pages/About'));
+const Archives = lazy(() => import('./pages/Archives'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Index = lazy(() => import('./pages/Index'));
+const News = lazy(() => import('./pages/News'));
 const NotFound = lazy(() => import('./pages/NotFound'));
-const Projects = lazy(() => import('./pages/Projects'));
-const Resume = lazy(() => import('./pages/Resume'));
+const Photos = lazy(() => import('./pages/Photos'));
+const Roster = lazy(() => import('./pages/Roster'));
+const Schedule = lazy(() => import('./pages/Schedule'));
+const Scores = lazy(() => import('./pages/Scores'));
 const Stats = lazy(() => import('./pages/Stats'));
+const Videos = lazy(() => import('./pages/Videos'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -22,10 +27,15 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Index} />
         <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
+        <Route path="/news" component={News} />
+        <Route path="/scores" component={Scores} />
+        <Route path="/schedule" component={Schedule} />
         <Route path="/stats" component={Stats} />
+        <Route path="/roster" component={Roster} />
+        <Route path="/photos" component={Photos} />
+        <Route path="/videos" component={Videos} />
+        <Route path="/archives" component={Archives} />
         <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
         <Route component={NotFound} status={404} />
       </Switch>
     </Suspense>

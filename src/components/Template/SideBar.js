@@ -9,7 +9,7 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/team.png`} alt="" />
+        <img src={`${PUBLIC_URL}/images/team.png`} alt="Blacksox Team Logo" />
       </Link>
       <header>
         <h2>New York Blacksox</h2>
@@ -17,13 +17,12 @@ const SideBar = () => (
     </section>
 
     <section className="blurb">
-      <h2>About</h2>
       <p>This is the official homepage for the New York Blacksox; a New York City adult
         league baseball club that plays throughout the Spring and Summer.
       </p>
       <ul className="actions">
         <li>
-          {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
+          <Link to="/about" className="button">Learn More</Link>
         </li>
       </ul>
     </section>

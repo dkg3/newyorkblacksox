@@ -10,12 +10,12 @@ const Index = () => (
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/">About the team</Link></h2>
+          <h2 data-testid="heading"><Link to="/about">About the team</Link></h2>
           <p>
-            Founded in 2000
+            Founded in 2008
           </p>
           <p>
-            Two Time NYCMBL Champions
+            2016 <a href="http://www.nycmbl.com" target="_blank" rel="noreferrer"> NYCMBL </a> Champions
           </p>
           <p>
             Manager Steven Ramos
