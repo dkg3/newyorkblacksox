@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 import EmailLink from '../components/Contact/EmailLink';
@@ -13,7 +12,7 @@ const Contact = () => (
     <article className="post" id="contact">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/contact">Contact</Link></h2>
+          <h2 data-testid="heading">Contact</h2>
         </div>
       </header>
       <div className="email-at">

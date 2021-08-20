@@ -3,51 +3,33 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
-import Education from '../components/Resume/Education';
-import Experience from '../components/Resume/Experience';
-import Skills from '../components/Resume/Skills';
-import Courses from '../components/Resume/Courses';
-import References from '../components/Resume/References';
+import Players from '../components/Roster/Roster';
 
-import courses from '../data/resume/courses';
-import degrees from '../data/resume/degrees';
-import positions from '../data/resume/positions';
-import { skills, categories } from '../data/resume/skills';
+import players2021 from '../data/roster/players_2021';
+import players2019 from '../data/roster/players_2019';
 
-const sections = [
-  'Education',
-  'Experience',
-  'Skills',
-  'Courses',
-  'References',
-];
+function checkYear() {
+  if (window.location.href.includes('2019')) {
+    return players2019;
+  }
+  return players2021;
+}
 
-const Resume = () => (
+const Roster = () => (
   <Main
-    title="Resume"
-    description="The history of the New York Blacksox"
+    title="Roster"
+    description="The Official Roster of the New York Blacksox"
   >
-    <article className="post" id="resume">
+    <article className="post" id="roster">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="resume">Resume</Link></h2>
-          <div className="link-container">
-            {sections.map((sec) => (
-              <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>))}
-          </div>
-
+          <h2 data-testid="heading"><Link to="/roster">Roster</Link></h2>
         </div>
       </header>
-      <Education data={degrees} />
-      <Experience data={positions} />
-      <Skills skills={skills} categories={categories} />
-      <Courses data={courses} />
-      <References />
+      <Players data={checkYear()} />
 
     </article>
   </Main>
 );
 
-export default Resume;
+export default Roster;

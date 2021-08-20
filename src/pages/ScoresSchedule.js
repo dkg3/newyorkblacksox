@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
@@ -14,7 +13,7 @@ const ScoresSchedule = () => (
     <article className="post" id="scores_schedule">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/scores-schedule">Scores/Schedule</Link></h2>
+          <h2 data-testid="heading">Scores/Schedule</h2>
         </div>
       </header>
       {data.map((scoresSchedule) => (

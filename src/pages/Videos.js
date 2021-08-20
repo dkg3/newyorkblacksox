@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
@@ -14,7 +13,7 @@ const Stats = () => (
     <article className="post" id="stats">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/stats">Stats</Link></h2>
+          <h2 data-testid="heading">Stats</h2>
         </div>
       </header>
       <Personal />

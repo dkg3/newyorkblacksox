@@ -1,0 +1,230 @@
+/* Roster */
+
+#roster {
+
+	.link-to {
+		position: relative;
+		top: -4.5em;
+	}
+
+	.link-container h4 {
+		text-decoration:none;
+		border-bottom: none;
+		display: inline-flex;
+
+		a {
+				padding: 0 .5em;
+				margin: 0;
+		}
+	}
+
+	.players {
+
+		.title {
+			text-align: center;
+			margin-bottom: 2em;
+		}
+	}
+	.experience {
+		.title {
+			text-align: center;
+		}
+		.job {
+			margin: 1em;
+			p{
+				margin: 0;
+			}
+		}
+	}
+
+	.jobs-container {
+		.points {
+			li {
+				margin: 0;
+				padding: 0;
+					font-size: .9em;
+			}
+		}
+	}
+
+	.courses {
+		padding-top: 1.6em;
+		.title {
+			text-align: center;
+		}
+		.course-list {
+			text-align: center;
+
+			h4 {
+				white-space: nowrap;
+			}
+		}
+	}
+
+	.skills {
+		margin-top: 2em;
+		.title {
+			text-align: center;
+			p {
+				font-size: 0.9em;
+			}
+		}
+	}
+	.references {
+		margin: 2em 0;
+		.title {
+			text-align: center;
+		}
+	}
+}
+
+.daterange {
+	margin-bottom: .2em;
+}
+
+.player-container {
+	table {
+		margin: 0px 0px 20px 0px;
+
+		tbody {
+			tr {
+				border: solid 0px _palette(border);
+				border-left: 0;
+				border-right: 0;
+			}
+		}
+	}
+
+	h4 {
+		font-weight: normal;
+	}
+
+	td {
+		text-align: center;
+	}
+
+	.player {
+		margin-bottom: .1em;
+		text-transform: none;
+		letter-spacing: 0.16em;
+		font-size: .8em;
+	}
+
+	.player-data {
+		text-transform: none;
+		padding-top: 0.3em;
+		margin-bottom: 1em;
+	}
+
+	.default-player-headshot {
+		border: 1px solid #ddd;
+		border-radius: 50%;
+		width: 50px;
+	}
+}
+
+.courses .course-number {
+	display: inline;
+}
+.courses .course-name {
+	display: inline;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  line-height: 2.5;
+  margin-top: -1em;
+  text-transform: uppercase;
+}
+
+.courses ul li{
+  display: inline;
+}
+
+.course-dot {
+	display: inline;
+	// display: none;
+}
+
+@include breakpoint(small) {
+	.course-dot {
+		display: none;
+	}
+	.course-container a{
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+	color: black;
+	text-decoration: underline;
+	display: block;
+	width: 40%;
+	margin: auto;
+	box-shadow: none
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {
+	background-color: #ddd
+}
+  
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+	display:contents;
+}
+
+.arrow {
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 3px;
+	position: relative;
+}
+  
+.up {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	top: 2px;
+}
+  
+.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	top: -2px;
+}
