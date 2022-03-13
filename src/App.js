@@ -9,7 +9,6 @@ const { PUBLIC_URL } = process.env;
 // NOTE that some of these chunks are very small. We should optimize
 // which pages are lazy loaded in the future.
 const About = lazy(() => import('./pages/About'));
-const Archives = lazy(() => import('./pages/Archives'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Index = lazy(() => import('./pages/Index'));
 const News = lazy(() => import('./pages/News'));
@@ -18,7 +17,6 @@ const Photos = lazy(() => import('./pages/Photos'));
 const Roster = lazy(() => import('./pages/Roster'));
 const ScoresSchedule = lazy(() => import('./pages/ScoresSchedule'));
 const Stats = lazy(() => import('./pages/Stats'));
-const Videos = lazy(() => import('./pages/Videos'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -30,9 +28,7 @@ const App = () => (
         <Route path="/scores-schedule" component={ScoresSchedule} />
         <Route path="/stats" component={Stats} />
         <Route path="/roster" component={Roster} />
-        <Route path="/photos" component={Photos} />
-        <Route path="/videos" component={Videos} />
-        <Route path="/archives" component={Archives} />
+        <Route path="/photos-videos" component={Photos} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} status={404} />
       </Switch>

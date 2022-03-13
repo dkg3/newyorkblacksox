@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
@@ -18,7 +17,7 @@ const Roster = () => (
     <article className="post" id="roster">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/roster">Roster</Link></h2>
+          <h2 data-testid="heading">Active Roster</h2>
         </div>
       </header>
       <Players data={rosterData} />

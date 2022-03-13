@@ -2,8 +2,8 @@ import React from 'react';
 
 const EmailLink = () => (
   <div>
-    <a href="mailto:money.s.2007@gmail.com">
-      <span>money.s.2007@gmail.com</span>
+    <a href="mailto:blacksoxnyc@gmail.com">
+      <span>blacksoxnyc@gmail.com</span>
     </a>
   </div>
 );

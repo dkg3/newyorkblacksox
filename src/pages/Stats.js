@@ -2,7 +2,6 @@ import React from 'react';
 
 import Main from '../layouts/Main';
 
-import Personal from '../components/Stats/Personal';
 import Site from '../components/Stats/Site';
 
 const Stats = () => (
@@ -16,7 +15,6 @@ const Stats = () => (
           <h2 data-testid="heading">Stats</h2>
         </div>
       </header>
-      <Personal />
       <Site />
     </article>
   </Main>

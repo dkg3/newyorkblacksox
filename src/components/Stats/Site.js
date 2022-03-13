@@ -1,6 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
 
-import Table from './Table';
 import initialData from '../../data/stats/site';
 
 const Stats = () => {
@@ -27,10 +26,80 @@ const Stats = () => {
     fetchData();
   }, [fetchData]);
 
+  // eslint-disable-next-line no-console
+  console.log(data);
   return (
     <div>
-      <h3>Some stats about this site</h3>
-      <Table data={data} />
+      <h3>Hitting Stats</h3>
+      <table className="stats-table" style={{ width: '100%' }}>
+        <tr>
+          <th>PLAYER</th>
+          <th>AVG</th>
+          <th>OBP</th>
+          <th>SLG</th>
+          <th>HR</th>
+          <th>RBI</th>
+        </tr>
+        <tr>
+          <td>David Krauskopf-Greene</td>
+          <td>.321</td>
+          <td>.374</td>
+          <td>.425</td>
+          <td>1</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Steven Ramos</td>
+          <td>.279</td>
+          <td>.337</td>
+          <td>.408</td>
+          <td>2</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Jeffery Lagares</td>
+          <td>.403</td>
+          <td>.455</td>
+          <td>.602</td>
+          <td>3</td>
+          <td>35</td>
+        </tr>
+      </table>
+      <h3>Pitching Stats</h3>
+      <table className="stats-table">
+        <tr>
+          <th>PLAYER</th>
+          <th>W</th>
+          <th>L</th>
+          <th>ERA</th>
+          <th>SO</th>
+          <th>WHIP</th>
+        </tr>
+        <tr>
+          <td>David Krauskopf-Greene</td>
+          <td>3</td>
+          <td>2</td>
+          <td>3.76</td>
+          <td>31</td>
+          <td>1.23</td>
+        </tr>
+        <tr>
+          <td>Steven Ramos</td>
+          <td>5</td>
+          <td>1</td>
+          <td>3.24</td>
+          <td>56</td>
+          <td>1.07</td>
+        </tr>
+        <tr>
+          <td>Jeffery Lagares</td>
+          <td>5</td>
+          <td>6</td>
+          <td>4.21</td>
+          <td>49</td>
+          <td>1.51</td>
+        </tr>
+      </table>
     </div>
   );
 };

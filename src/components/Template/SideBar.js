@@ -29,7 +29,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; New York Blacksox <Link to="/">newyorkblacksox.com</Link>.</p>
+      <p className="copyright">&copy; New York Blacksox</p>
     </section>
   </section>
 );

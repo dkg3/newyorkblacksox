@@ -25,16 +25,8 @@ const routes = [
     path: '/roster',
   },
   {
-    label: 'Photos',
-    path: '/photos',
-  },
-  {
-    label: 'Videos',
-    path: '/videos',
-  },
-  {
-    label: 'Archives',
-    path: '/archives',
+    label: 'Photos/Videos',
+    path: '/photos-videos',
   },
   {
     label: 'Contact',
