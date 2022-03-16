@@ -33,24 +33,42 @@ const Stats = () => {
   return (
     <div className="row">
       <div className="column">
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic1.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic2.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic3.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic4.jpg`} style={{ width: '100%' }} alt="" />
+        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+        <video style={{ width: '100%', marginTop: '8px' }} controls>
+          <source src={`${PUBLIC_URL}/videos/video1.mp4`} type="video/mp4" />
+        </video>
       </div>
       <div className="column">
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic5.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic6.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic7.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic8.jpg`} style={{ width: '100%' }} alt="" />
+        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+        <video style={{ width: '100%', marginTop: '8px' }} controls>
+          <source src={`${PUBLIC_URL}/videos/video2.mp4`} type="video/mp4" />
+        </video>
       </div>
       <div className="column">
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic9.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic10.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic11.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic12.jpg`} style={{ width: '100%' }} alt="" />
       </div>
       <div className="column">
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
-        <img src={`${PUBLIC_URL}/images/team.png`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic13.jpg`} style={{ width: '100%' }} alt="" />
+        <img src={`${PUBLIC_URL}/images/pic14.jpg`} style={{ width: '100%' }} alt="" />
+        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+        <video style={{ width: '100%', marginTop: '8px' }} controls>
+          <source src={`${PUBLIC_URL}/videos/video3.mp4`} type="video/mp4" />
+        </video>
+        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+        <video style={{ width: '100%' }} controls>
+          <source src={`${PUBLIC_URL}/videos/video4.mp4`} type="video/mp4" />
+        </video>
       </div>
     </div>
   );

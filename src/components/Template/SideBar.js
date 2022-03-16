@@ -9,7 +9,7 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/team.png`} alt="Blacksox Team Logo" />
+        <img src={`${PUBLIC_URL}/images/soxlogo.png`} alt="Blacksox Team Logo" />
       </Link>
       <header>
         <h2>New York Blacksox</h2>

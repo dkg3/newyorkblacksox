@@ -18,7 +18,7 @@ const Contact = () => (
       <div className="email-at">
         <p>
           If you are interested in joining the team or have any questions,
-          please get in touch. You can email me at:
+          please get in touch. You can email us at:
         </p>
         <EmailLink />
       </div>

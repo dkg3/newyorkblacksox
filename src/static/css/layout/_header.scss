@@ -233,3 +233,8 @@
 		display: initial;
 	}
 }
+
+.hamburger-ul {
+	&:focus { 
+		outline: none; }
+}
