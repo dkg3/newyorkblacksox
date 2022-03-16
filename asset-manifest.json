@@ -7,14 +7,14 @@
     "main.css": "/newyorkblacksox/static/css/main.59981a5c.chunk.css",
     "main.js": "/newyorkblacksox/static/js/main.f99f449e.chunk.js",
     "main.js.map": "/newyorkblacksox/static/js/main.f99f449e.chunk.js.map",
-    "runtime-main.js": "/newyorkblacksox/static/js/runtime-main.b37499d0.js",
-    "runtime-main.js.map": "/newyorkblacksox/static/js/runtime-main.b37499d0.js.map",
+    "runtime-main.js": "/newyorkblacksox/static/js/runtime-main.0cd76732.js",
+    "runtime-main.js.map": "/newyorkblacksox/static/js/runtime-main.0cd76732.js.map",
     "static/js/4.d7d2d06d.chunk.js": "/newyorkblacksox/static/js/4.d7d2d06d.chunk.js",
     "static/js/4.d7d2d06d.chunk.js.map": "/newyorkblacksox/static/js/4.d7d2d06d.chunk.js.map",
     "static/js/5.5d72019f.chunk.js": "/newyorkblacksox/static/js/5.5d72019f.chunk.js",
     "static/js/5.5d72019f.chunk.js.map": "/newyorkblacksox/static/js/5.5d72019f.chunk.js.map",
-    "static/js/6.f56408f9.chunk.js": "/newyorkblacksox/static/js/6.f56408f9.chunk.js",
-    "static/js/6.f56408f9.chunk.js.map": "/newyorkblacksox/static/js/6.f56408f9.chunk.js.map",
+    "static/js/6.c6271214.chunk.js": "/newyorkblacksox/static/js/6.c6271214.chunk.js",
+    "static/js/6.c6271214.chunk.js.map": "/newyorkblacksox/static/js/6.c6271214.chunk.js.map",
     "static/js/7.f5429e6e.chunk.js": "/newyorkblacksox/static/js/7.f5429e6e.chunk.js",
     "static/js/7.f5429e6e.chunk.js.map": "/newyorkblacksox/static/js/7.f5429e6e.chunk.js.map",
     "static/js/8.3d15e488.chunk.js": "/newyorkblacksox/static/js/8.3d15e488.chunk.js",
@@ -37,7 +37,7 @@
     "static/js/4.d7d2d06d.chunk.js.LICENSE.txt": "/newyorkblacksox/static/js/4.d7d2d06d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b37499d0.js",
+    "static/js/runtime-main.0cd76732.js",
     "static/js/4.d7d2d06d.chunk.js",
     "static/css/main.59981a5c.chunk.css",
     "static/js/main.f99f449e.chunk.js"
