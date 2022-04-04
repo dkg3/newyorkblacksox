@@ -30,7 +30,7 @@ const Stats = () => {
   console.log(data);
   return (
     <div>
-      <h3>Hitting Stats</h3>
+      <h3 style={{ position: 'relative', right: '10px' }}>Hitting Stats</h3>
       <table className="stats-table" style={{ width: '100%' }}>
         <tr>
           <th>PLAYER</th>
@@ -40,8 +40,8 @@ const Stats = () => {
           <th>HR</th>
           <th>RBI</th>
         </tr>
-        <tr>
-          <td>David Krauskopf-Greene</td>
+        {/* <tr>
+          <td>David KG</td>
           <td>.321</td>
           <td>.374</td>
           <td>.425</td>
@@ -49,7 +49,7 @@ const Stats = () => {
           <td>21</td>
         </tr>
         <tr>
-          <td>Steven Ramos</td>
+          <td>Steven R</td>
           <td>.279</td>
           <td>.337</td>
           <td>.408</td>
@@ -57,15 +57,15 @@ const Stats = () => {
           <td>17</td>
         </tr>
         <tr>
-          <td>Jeffery Lagares</td>
+          <td>Jeffery L</td>
           <td>.403</td>
           <td>.455</td>
           <td>.602</td>
           <td>3</td>
           <td>35</td>
-        </tr>
+        </tr> */}
       </table>
-      <h3>Pitching Stats</h3>
+      <h3 style={{ position: 'relative', right: '10px' }}>Pitching Stats</h3>
       <table className="stats-table">
         <tr>
           <th>PLAYER</th>
@@ -75,8 +75,8 @@ const Stats = () => {
           <th>SO</th>
           <th>WHIP</th>
         </tr>
-        <tr>
-          <td>David Krauskopf-Greene</td>
+        {/* <tr>
+          <td>David KG</td>
           <td>3</td>
           <td>2</td>
           <td>3.76</td>
@@ -84,7 +84,7 @@ const Stats = () => {
           <td>1.23</td>
         </tr>
         <tr>
-          <td>Steven Ramos</td>
+          <td>Steven R</td>
           <td>5</td>
           <td>1</td>
           <td>3.24</td>
@@ -92,13 +92,13 @@ const Stats = () => {
           <td>1.07</td>
         </tr>
         <tr>
-          <td>Jeffery Lagares</td>
+          <td>Jeffery L</td>
           <td>5</td>
           <td>6</td>
           <td>4.21</td>
           <td>49</td>
           <td>1.51</td>
-        </tr>
+        </tr> */}
       </table>
     </div>
   );
